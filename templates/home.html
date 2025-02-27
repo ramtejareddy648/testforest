@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form action="{{ url_for('predict_data')}}" method="post">
+            <input type="text" name="temperature" placeholder="temperature" required>
+            <input type="text" name="RH" placeholder="RH" required>
+            <input type="text" name="Ws" placeholder="Ws" required>
+            <input type="text" name="Rain" placeholder="Rain" required>
+            <input type="text" name="FFMC" placeholder="FFMC" required>
+            <input type="text" name="DMC" placeholder="DMC" required>
+            <input type="text" name="ISI" placeholder="ISI" required>
+            <input type="text" name="Clases" placeholder="Clases" required>
+            <input type="text" name="Region" placeholder="Region" required>
+            <button type="submit">Predict</button>
+        </form>
+        <h2>the fwi prediction is {{results}}</h2>
+
+    </body>
+</html>
